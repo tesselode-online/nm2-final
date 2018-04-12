@@ -1,0 +1,176 @@
+@keyframes section-in {
+	from {transform: translateY(1em); opacity: 0;}
+	to {transform:  translateY(0em); opacity: 1;}
+}
+
+body {
+	margin: 0;
+	background: #121d66;
+	color: white;
+	font-size: 1.4em;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #5398b1;
+}
+
+video {
+	width: 100%;
+}
+
+h1 {
+	font-weight: 600;
+}
+
+.header {
+	margin-bottom: 25px;
+	padding: 2em 0;
+	background: url("../images/bg.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.header img {
+	width: 10em;
+}
+
+.header h1 {
+	margin-bottom: 0;
+}
+
+.nav {
+	margin-top: 1em;
+}
+
+.nav a {
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-bottom: .25em solid white;
+	transition: padding-left .33s, padding-right .33s, margin-left .33s, margin-right .33s;
+	display: inline-block;
+}
+
+.nav a:hover {
+	padding-left: .5em;
+	padding-right: .5em;
+	margin-left: 1em;
+	margin-right: 1em;
+	transition: padding-left .33s, padding-right .33s, margin-left .33s, margin-right .33s;
+	background: white;
+}
+
+.content {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section {
+	margin: 1em;
+	box-sizing: border-box;
+	width: 45%;
+	padding: 0;
+	float: left;
+	background: #5398b1;
+	box-shadow: 1em 1em 1em 0em rgba(0, 0, 0, .25);
+	animation: section-in .5s;
+	animation-fill-mode: both;
+}
+
+.section:nth-child(1) {animation-delay: .25s;}
+.section:nth-child(2) {animation-delay: .5s;}
+.section:nth-child(3) {animation-delay: .75s;}
+.section:nth-child(4) {animation-delay: 1s;}
+
+h2 {
+	background-color: #1e5275;
+	margin: 0;
+	padding: .5em 1em;
+}
+
+.section p {
+	padding: 0em 1.5em;
+}
+
+.products {
+	width: 100%;
+	padding-left: 1em;
+}
+
+.products img {
+	width: 100%;
+}
+
+.products td {
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+.products td:nth-child(odd) {
+	width: 33%;
+	max-width: 10em;
+}
+
+.products td:nth-child(even) {
+	font-weight: 600;
+}
+
+.footer {
+	clear: both;
+	padding: 1em;
+	background-color: black;
+}
+
+.footer img {
+	height: 5em;
+}
+
+.footer table {
+	width: 100%;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer td {
+	padding: 1em;
+	width: 50%;
+}
+
+.footer td:nth-child(1) {
+	text-align: right;
+}
+
+@media screen and (max-width: 1200px)
+{
+	.content {
+		width: 80%;
+	}
+
+	.section {
+		width: 100%;
+		float: unset;
+	}
+}
+
+@media screen and (max-width: 900px)
+{
+	.content {
+		width: 100%;
+	}
+
+	.section {
+		background: none;
+		border: none;
+	}
+}
