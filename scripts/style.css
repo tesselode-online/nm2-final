@@ -26,6 +26,10 @@ video {
 }
 
 h1 {
+	font-weight: 400;
+}
+
+strong {
 	font-weight: 600;
 }
 
@@ -128,7 +132,7 @@ h2 {
 .footer {
 	clear: both;
 	padding: 1em;
-	background-color: black;
+	background-color: #1e5275;
 }
 
 .footer img {
