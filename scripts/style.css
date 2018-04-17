@@ -102,31 +102,12 @@ h2 {
 	padding: .5em 1em;
 }
 
+.section img {
+	width: 100%;
+}
+
 .section p {
 	padding: 0em 1.5em;
-}
-
-.products {
-	width: 100%;
-	padding-left: 1em;
-}
-
-.products img {
-	width: 100%;
-}
-
-.products td {
-	padding-left: .5em;
-	padding-right: .5em;
-}
-
-.products td:nth-child(odd) {
-	width: 33%;
-	max-width: 10em;
-}
-
-.products td:nth-child(even) {
-	font-weight: 600;
 }
 
 .footer {
